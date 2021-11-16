@@ -1,0 +1,698 @@
+/* ここから下に記載していく */
+@charset "UTF-8";
+/* 全体文字の指定 */
+html{
+    font-size: 62.5%;
+    width: 100%;
+    max-width: 136.5rem;
+}
+
+/* サイト幅の設定（勝手に1365pxとしてるので最後に修正必要）*/
+.sitebox{
+    width: 100%;
+    max-width: 136.5rem;
+}
+
+
+
+/* Navエリアの設定 */
+
+header {
+    width: 100%;
+    
+    background-color: #fff;
+    font-size: 2.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/*右端よせ*/
+nav {
+    margin: 0 0 0 auto;
+ }
+
+
+
+/* Navエリアの横並び */
+
+.header-nav{
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+
+a {	
+    text-decoration: none;
+    color: #4b4b4b;
+ } 
+/* 文字の間隔設定 */
+.navi-item{
+    margin-left: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* 画像の上にタイトル・サブタイトル設定 */
+/*間隔設定未完了！！（後ほど設定）*/
+.container{
+position: relative;
+}
+
+.container-tomato{
+    width: 100%;
+}
+
+.title-box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate3d(-50%,-50%,0);
+    color: #fff ;
+}
+
+.title{
+    font-size: 4.0rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+}
+
+.subtitle{
+    font-size: 2.0rem;
+    letter-spacing: 0.1rem;
+}
+
+
+/*About部分中央揃え*/
+.div-about{
+    text-align: center;
+}
+/*About英文字体設定*/
+#about{
+    color: #ffe61a;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    max-width: 136.5rem;
+    width: 100%;
+}
+/*About日本語部分字体設定*/
+.about-text{
+    color: #222222;
+}
+
+.about-title{
+    font-size: 1.8rem;
+    margin-bottom: 6rem;
+}
+
+.about-item1{
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+}
+
+.about-item2{
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+.about-item3{
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+}
+.about-item4{
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+}
+
+.about-item5{
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.about-item6{
+    font-size: 1.6rem;
+    margin-bottom: 8rem;
+}
+
+/*4画像の並列表示*/
+.pictures4{
+    display: flex;
+    
+    margin-bottom: 6rem;
+    max-width: 136.5rem;
+    width: 100%;
+    justify-content: space-between;
+}
+/*画像の均等表示（4等分）*/
+.pictures4 img{
+    
+    width: 34.125rem;
+}
+/*Courseの表示設定*/
+.div-course{
+    color: #222222;
+    text-align: center;
+}
+#course{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+.course-text1{
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+
+}
+.course-text2{
+    font-size: 1.6rem;
+    margin-bottom: 6rem;
+}
+/*アピールポイント説明箇所*/
+.course-point1{
+    /*画像と文章を並列*/
+    display: flex;
+    justify-content: space-between;
+    max-width: 136.5rem;
+    width:100%;
+    /*写真部まで背景グレーにしてるのはダメ？*/
+    background-color: #fafafa;
+}
+.point1-picture{
+    width: 100%;
+}
+
+.point1{
+    width: 100%;
+    color: #222222;
+    align-self:center;
+    margin-left: 5rem;
+      
+}
+
+.point1-title{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+    
+}
+.point1-text{
+    
+    font-size: 16px;
+    margin-bottom: 15.2px;
+    max-width: 48rem;
+    width: 100%;
+
+}
+
+.course-point2{
+    display: flex;
+    justify-content: space-between;
+    max-width: 136.5rem;
+    width:100%;
+    background-color: #fafafa;
+}
+
+.point2{
+    color: black;
+    align-self: center;
+    margin: 0 5rem 0 auto;
+}
+
+.point2-title{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+      
+}
+.point2-text{
+    font-size: 16px;
+    margin-bottom: 15.2px;
+    max-width: 48rem;
+    width: 100%;
+}
+
+.course-point3{
+    display: flex;
+    justify-content: space-between;
+    max-width: 136.5rem;
+    width:100%;
+    background-color: #fafafa;
+}
+
+.point3{
+    color: black;
+    align-self: center;
+    margin: 0 auto 0 5rem;
+}
+
+.point3-title{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+}
+
+.point3-text{
+    font-size: 16px;
+    margin-bottom: 15.2px;
+    max-width: 48rem;
+    width: 100%;
+}
+
+/*ニュース部分*/
+#news{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ffe61a;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.news-jp{
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.news-wrapper{
+    max-width: 114rem;
+    margin: auto;
+
+    
+}
+
+/*ニュース並列*/
+.news-list{
+    display: flex;
+    justify-content: center;
+
+}
+/*ニュース①*/
+.news1{
+    width: 30rem;
+    margin-right: 3rem;
+}
+.news1-date{
+    color: black;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 2.4rem;
+
+}
+.news1-text1{
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 1.2rem;
+}
+.news1-text2{
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 1.2rem;
+}
+
+.news1-text3{
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 1.2rem;
+}
+
+/*HOVER　DIV全体リンク設定*/
+.news1 {
+    position: relative;
+}
+.news1 a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+
+.news1 a:hover{/* マウスオーバー時に色変更*/
+    opacity: 0.1;
+    background-color: #000000;
+}
+
+
+/*ニュース2*/
+.news2{
+    width: 30rem;
+    margin-right: 3rem;
+}
+.news2-date{
+    color: black;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 2.4rem;
+
+}
+.news2-text1{
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 1.2rem;
+}
+.news2-text2{
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 1.2rem;
+}
+
+.news2-text3{
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 1.2rem;
+}
+
+/*HOVER　DIV全体リンク設定*/
+.news2 {
+    position: relative;
+}
+.news2 a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+
+.news2 a:hover{/* マウスオーバー時に色変更*/
+    opacity: 0.1;
+    background-color: #000000;
+}
+
+/*ニュース3*/
+.news3{
+    width: 30rem;
+    margin-right: 3rem;
+}
+.news3-date{
+    color: black;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 2.4rem;
+
+}
+.news3-text1{
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 1.2rem;
+}
+.news3-text2{
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 1.2rem;
+}
+
+.news3-text3{
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 1.2rem;
+}
+
+/*HOVER　DIV全体リンク設定*/
+.news3 {
+    position: relative;
+}
+.news3 a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+
+.news3 a:hover{/* マウスオーバー時に色変更*/
+    opacity: 0.1;
+    background-color: #000000;
+}
+
+/*moreボタン設定*/
+.more-button{
+    text-align: center;
+}
+.more{
+    background-color: #ffe61a;
+    height: 6rem;
+    width: 30rem;
+    position: relative;
+    border-color: #ffe61a;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.more p{
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.more a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+/*Accessパート表示*/
+.access-info{
+    background-color: #fafafa;
+    text-align: center;
+}
+
+#access{
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+.company-info{
+    font-size: 1.8rem;
+    margin-bottom: 6rem;
+}
+
+.googlemap {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 25%; 
+  }
+  
+  /* Google Mapのiframe */
+  .googlemap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 6rem;
+  }
+
+  /*アクセス情報表示*/
+
+  .school-info{
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      margin-left: 150px;
+  }
+  .school-info pre{
+    text-align: left;
+      line-height: 5rem;
+      font-size: 1.6rem;
+      }
+    /*タブ揃えて表示：全体を中央揃え、子要素を左寄せにしようとしたが上手くいかず力技。（終わり次第見直し必要）*/
+.school-name::before{
+    content: "\9""\9""\9""\9""\9""\9""\9";
+}
+
+.specific-name::before{
+    content: "\9""\9";
+}
+
+.school-address::before{
+  content: "\9""\9""\9""\9""\9""\9""\9";
+}
+
+.specific-address::before{
+  content: "\9";
+}
+
+.school-tel::before{
+  content: "\9""\9""\9""\9""\9""\9""\9";
+}
+
+.specific-tel::before{
+  content: "\9""\9""\9";
+}
+
+.school-fax::before{
+  content: "\9""\9""\9""\9""\9""\9""\9";
+}
+
+.specific-fax::before{
+  content: "\9""\9""\9";
+}
+
+.school-mail::before{
+  content: "\9""\9""\9""\9""\9""\9""\9";
+}
+
+.specific-mail::before{
+  content: "\9""\9""\9";
+}
+
+.school-name{
+    margin-top: 6rem;
+}
+.school-mail{
+    padding-bottom: 6rem;
+}
+
+.contact-container {
+    /*text-alignここに書いても意味ない？個別に指定することにしている（今後要解決）*/
+    text-align: center;
+    color: black;
+    }
+#contact{
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding-top: 6rem;
+    margin-bottom: 3rem;
+   text-align: center;
+    
+}
+
+
+.contact-text1{
+    font-size: 1.6rem;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+.contact-text2{
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.contact-text3{
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.contact-text4{
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.contact-text5{
+    font-size: 1.6rem;
+    padding-bottom: 7rem;
+    text-align: center;
+}
+
+
+.form-wrapper{
+    width: 64rem;
+    margin: auto;
+   
+}
+
+
+
+.form-inner{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: solid 2px #bfbfbf;             
+
+}
+.form-item{
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 64px;
+    box-sizing: border-box;
+    border-top:solid 2px #bfbfbf;
+    
+
+}
+
+.detail-line{
+    border-bottom: solid 2px #bfbfbf;
+}
+
+
+.select-tab{
+    height: 3.6rem;
+    width: 40rem;
+}
+
+.option-list{
+   
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.submit-button{
+    text-align: center;
+    margin: 3rem 0 14rem 0;
+    position: relative;
+
+}
+
+.submit-button a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+
+
+.form-title{
+    width: 24rem;
+    font-size: 1.6rem;
+    text-align: left;
+    padding: 16px 64px 8px 16px;
+    box-sizing: border-box;
+    border-top: solid 2px #bfbfbf;
+    
+    border-right: solid 2px #bfbfbf;
+
+   
+}
+
+.form-parts{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border: solid 1px #bfbfbf;
+    font-size: 1.6rem;
+    
+}
+
+
+.checkbox-text{
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+
+
+/*フッター表示*/
+.footer{
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fafafa;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color:#707070 ;
+}
